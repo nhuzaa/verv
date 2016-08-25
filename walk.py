@@ -32,10 +32,12 @@ while True:
 
     # center
     x = input("Right Base Servo")
-    rBaseServo.set(x)
+    print(int(x))
+    rBaseServo.set(int(x))
     time.sleep(1)
     x = input("left Base Servo")
-    lBaseServo.set(x)
+    print(int(x))
+    lBaseServo.set(int(x))
     time.sleep(1)
     #
     # # Preparation of Right leg up
