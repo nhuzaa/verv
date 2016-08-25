@@ -46,7 +46,7 @@ while True:
     # center
     rBaseServo.set(90)
     time.sleep(1)
-    lBaseServo.set(80)
+    lBaseServo.set(60)
     time.sleep(1)
 
     # Right Down
@@ -71,7 +71,7 @@ while True:
     # center
     rBaseServo.set(90)
     time.sleep(1)
-    lBaseServo.set(80)
+    lBaseServo.set(60)
     time.sleep(1)
 
     # Left Down
