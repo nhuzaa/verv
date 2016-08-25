@@ -5,8 +5,8 @@ from servo import servo
 eyepin = 25
 # Left leg
 lHipRot = 4
-lHip = 17
-lKnee = 27
+lHip = 27
+lKnee = 17
 lBase = 22
 
 lHipServo = servo(lHip)
