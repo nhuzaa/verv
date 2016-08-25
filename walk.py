@@ -63,7 +63,7 @@ while True:
     # left UP
     lKneeServo.set(180)
     time.sleep(1)
-    lHipServo.set(0)
+    lHipServo.set(180)
     time.sleep(1)
 
     # center
