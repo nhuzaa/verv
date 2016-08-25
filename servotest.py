@@ -36,6 +36,13 @@ def map(angle):
 
     return pluse
 
+
+def mapAngle(pulse):
+    pulse = pulse - 4.5
+    percent = pulse / (10.5 - 4.5)
+    angle = percent * 180
+
+    return angle
 try:
     # while 1:
     # 	time.sleep(2)
@@ -53,7 +60,7 @@ try:
         print("forward")
         while(x <= 10.5):
             x = x + 0.25
-            print(map(x))
+            print(mapAngle(x))
             p2.ChangeDutyCycle(x)
             p1.ChangeDutyCycle(x)
             time.sleep(0.05)
@@ -61,7 +68,7 @@ try:
         print("reverse")
         while(x >= 4.5):
             x = x - 0.25
-            print(map(x))
+            print(mapAngle(x))
             p2.ChangeDutyCycle(x)
             p1.ChangeDutyCycle(x)
             time.sleep(0.05)
