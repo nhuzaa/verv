@@ -51,9 +51,9 @@ class servo:
         self.angle = angle
 
     def set(self, angle):
-
-        self.s.ChangeDutyCycle(map(self.angle=angle))
+        self.s.ChangeDutyCycle(map(angle))
         print("Angle" + str(angle))
+        self.angle = angle
 
     def limit(self):
         if(self.angle > 180):
