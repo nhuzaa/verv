@@ -3,40 +3,52 @@ import time
 from servo import servo
 
 eyepin = 25
+
 # Left leg
-lHipRot = 22
-lHip = 27
-lKnee = 17
-lBase = 4
+lHipRot = 6
+lHip = 13
+lKnee = 19
+lBase = 26
 
 # Right leg
-rHipRot = 6
-rHip = 13
-rKnee = 19
-rBase = 26
+rHipRot = 22
+rHip = 27
+rKnee = 17
+rBase = 4
 
+#lHipRotServo = servo(lHipRot, "lHipRot")
 lHipServo = servo(lHip, "lHip")
 lKneeServo = servo(lKnee, "lKnee")
 lBaseServo = servo(lBase, "lBase")
 
+#rHipRotServo = servo(rHipRot, "rHipRot")
+rHipServo = servo(rHip, "rHip")
+rKneeServo = servo(rKnee, "rKnee")
 rBaseServo = servo(rBase, "rBase")
 
-# lHipServo.set(90)
-# lKneeServo.set(90)
-# lBaseServo.set(90)
-
-# rBaseServo.set(90)
-
 while True:
-    lHipServo.slowset(0)
-    # lKneeServo.slowset(180)
-    # lBaseServo.slowset(0)
-    # rBaseServo.slowset(0)
+
+    # Preparation of Right leg up
+    # lean left
+    rBaseServo.set(160)
     time.sleep(1)
-    lHipServo.slowset(180)
-    # lKneeServo.slowset(0)
-    # lBaseServo.slowset(180)
-    # rBaseServo.slowset(180)
+    lBaseServo.set(160)
     time.sleep(1)
 
-    # stride right
+    # Right UP
+    rKneeServo.set(180)
+    time.sleep(1)
+    rHipServo.set(0)
+    time.sleep(1)
+
+    # center
+    rBaseServo.set(90)
+    time.sleep(1)
+    lBaseServo.set(90)
+    time.sleep(1)
+
+    # Right Down
+    rKneeServo.set(90)
+    time.sleep(1)
+    rHipServo.set(90)
+    time.sleep(1)
