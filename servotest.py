@@ -27,6 +27,15 @@ p2.start(7.5)
 # p4.start(7.5)
 
 
+def map(angle):
+
+    percent = angle / 180
+
+    pluse = percent * (10.5 - 4.5)
+    pluse = pluse + 4.5
+
+    return pluse
+
 try:
     # while 1:
     # 	time.sleep(2)
@@ -44,7 +53,7 @@ try:
         print("forward")
         while(x <= 10.5):
             x = x + 0.25
-            print(x)
+            print(map(x))
             p2.ChangeDutyCycle(x)
             p1.ChangeDutyCycle(x)
             time.sleep(0.05)
@@ -52,7 +61,7 @@ try:
         print("reverse")
         while(x >= 4.5):
             x = x - 0.25
-            print(x)
+            print(map(x))
             p2.ChangeDutyCycle(x)
             p1.ChangeDutyCycle(x)
             time.sleep(0.05)
