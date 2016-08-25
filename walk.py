@@ -35,6 +35,6 @@ while True:
     time.sleep(1)
     # lHipServo.slowset(180)
     # lKneeServo.slowset(0)
-    lBaseServo.slowset(90)
-    rBaseServo.slowset(90)
+    lBaseServo.slowset(180)
+    rBaseServo.slowset(180)
     time.sleep(1)
