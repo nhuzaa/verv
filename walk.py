@@ -42,8 +42,8 @@ while True:
 
     # Preparation of Right leg up
     # lean left
-    rBaseServo.slowset(180)
-    lBaseServo.slowset(180)
+    rBaseServo.slowset(170)
+    lBaseServo.slowset(170)
 
     # Right UP
     rKneeServo.slowset(180)
