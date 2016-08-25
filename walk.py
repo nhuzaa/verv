@@ -43,49 +43,39 @@ while True:
     # Preparation of Right leg up
     # lean left
     rBaseServo.slowset(180)
-    time.sleep(1)
     lBaseServo.slowset(180)
-    time.sleep(1)
 
     # Right UP
     rKneeServo.slowset(180)
-    time.sleep(1)
     rHipServo.slowset(0)
-    time.sleep(1)
 
     # center
     rBaseServo.slowset(120)
-    time.sleep(1)
+
     lBaseServo.slowset(160)
-    time.sleep(1)
 
     # Right Down
     rKneeServo.slowset(90)
-    time.sleep(1)
+
     rHipServo.slowset(90)
-    time.sleep(1)
 
     # Prepartion for Left Leg up
     # Lean Right
     rBaseServo.slowset(40)
-    time.sleep(1)
+
     lBaseServo.slowset(30)
-    time.sleep(1)
 
     # left UP
     lKneeServo.slowset(0)
-    time.sleep(1)
+
     lHipServo.slowset(180)
-    time.sleep(1)
 
     # center
     rBaseServo.slowset(120)
-    time.sleep(1)
+
     lBaseServo.slowset(160)
-    time.sleep(1)
 
     # Left Down
     lKneeServo.slowset(90)
-    time.sleep(1)
+
     lHipServo.set(90)
-    time.sleep(1)
