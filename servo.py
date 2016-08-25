@@ -55,13 +55,13 @@ class servo:
         else:
             for x in range(self.angle, angle + 1, -1):
                 self.s.ChangeDutyCycle(map(x))
-                print("Angle" + self.name + str(x))
+                print("Angle " + self.name + str(x))
                 time.sleep(0.022)
             self.angle = angle
 
     def set(self, angle):
         self.s.ChangeDutyCycle(map(angle))
-        print("Angle" + self.name + str(angle))
+        print("Angle " + self.name + str(angle))
         self.angle = angle
 
     def limit(self):
