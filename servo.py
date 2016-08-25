@@ -23,7 +23,7 @@ class servo:
         self.pin = pin
         GPIO.setup(pin, GPIO.OUT)
         s = GPIO.PWM(pin, 50)
-        s.start(map(self.pulse=self.angle))
+        s.start(map(self.angle))
 
     # def up(self):
     #     if(self.angle <= 10.5 and self.angle >= 4.5):
