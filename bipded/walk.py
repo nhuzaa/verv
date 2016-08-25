@@ -15,7 +15,7 @@ positions = [mid] * 8
 
 lefthip = 3
 leftknee = 1
-leftankle = 0 // lkn
+leftankle = 0
 
 rightankle = 2
 
