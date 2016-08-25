@@ -28,30 +28,30 @@ rBaseServo = servo(rBase, "rBase")
 
 while True:
 
-    # Preparation of Right leg up
-    # lean left
-    rBaseServo.set(160)
-    time.sleep(1)
-    lBaseServo.set(160)
-    time.sleep(1)
-
-    # Right UP
-    rKneeServo.set(180)
-    time.sleep(1)
-    rHipServo.set(0)
-    time.sleep(1)
-
-    # center
-    rBaseServo.set(90)
-    time.sleep(1)
-    lBaseServo.set(90)
-    time.sleep(1)
-
-    # Right Down
-    rKneeServo.set(90)
-    time.sleep(1)
-    rHipServo.set(90)
-    time.sleep(1)
+    # # Preparation of Right leg up
+    # # lean left
+    # rBaseServo.set(160)
+    # time.sleep(1)
+    # lBaseServo.set(160)
+    # time.sleep(1)
+    #
+    # # Right UP
+    # rKneeServo.set(180)
+    # time.sleep(1)
+    # rHipServo.set(0)
+    # time.sleep(1)
+    #
+    # # center
+    # rBaseServo.set(90)
+    # time.sleep(1)
+    # lBaseServo.set(90)
+    # time.sleep(1)
+    #
+    # # Right Down
+    # rKneeServo.set(90)
+    # time.sleep(1)
+    # rHipServo.set(90)
+    # time.sleep(1)
 
     # Prepartion for Left Leg up
     # Lean Right
@@ -61,7 +61,7 @@ while True:
     time.sleep(1)
 
     # left UP
-    lKneeServo.set(180)
+    lKneeServo.set(0)
     time.sleep(1)
     lHipServo.set(180)
     time.sleep(1)
