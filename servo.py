@@ -45,7 +45,7 @@ class servo:
 
     def set(self, angle):
 
-        pY.ChangeDutyCycle(map(angle))
+        self.s.ChangeDutyCycle(map(angle))
         print("Angle" + str(angle))
 
     def limit(self):
