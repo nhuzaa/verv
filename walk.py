@@ -26,6 +26,8 @@ rHipServo = servo(rHip, "rHip")
 rKneeServo = servo(rKnee, "rKnee")
 rBaseServo = servo(rBase, "rBase")
 
+lHipRotServo.set(70)
+rHipRotServo.set(70)
 while True:
 
     # Preparation of Right leg up
