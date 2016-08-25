@@ -14,5 +14,5 @@ lHipServo = servo(lHip)
 while True:
     lHipServo.set(0)
     time.sleep(1)
-    lHipServo(180)
+    lHipServo.set(180)
     time.sleep.set(1)
