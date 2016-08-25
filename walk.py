@@ -52,3 +52,28 @@ while True:
     time.sleep(1)
     rHipServo.set(90)
     time.sleep(1)
+
+    # Prepartion for Left Leg up
+    # Lean Right
+    rBaseServo.set(20)
+    time.sleep(1)
+    lBaseServo.set(20)
+    time.sleep(1)
+
+    # left UP
+    lKneeServo.set(180)
+    time.sleep(1)
+    lHipServo.set(0)
+    time.sleep(1)
+
+    # center
+    rBaseServo.set(90)
+    time.sleep(1)
+    lBaseServo.set(90)
+    time.sleep(1)
+
+    # Left Down
+    lKneeServo.set(90)
+    time.sleep(1)
+    lHipServo.set(90)
+    time.sleep(1)
