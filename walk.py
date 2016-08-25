@@ -15,4 +15,4 @@ while True:
     lHipServo.set(0)
     time.sleep(1)
     lHipServo.set(180)
-    time.sleep.set(1)
+    time.sleep(1)
