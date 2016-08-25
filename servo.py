@@ -9,10 +9,12 @@ class servo:
     angle = 90
     pulse = 7.5
     s = None
+    pin = None
 
     def __init__(self, pin):
+        self.pin = pin
         GPIO.setup(pin, GPIO.OUT)
-        s = GPIO.PWM(pinout1, 50)
+        s = GPIO.PWM(pin, 50)
         s.start(map(self.angle))
 
     # def up(self):
