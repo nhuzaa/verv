@@ -31,11 +31,11 @@ rHipRotServo.set(70)
 while True:
 
     # center
-    x = raw_input("Right Base Servo")
+    x = input("Right Base Servo")
     rBaseServo.set(x)
     time.sleep(1)
-    x = raw_input("left Base Servo")
-    lBaseServo.set(60)
+    x = input("left Base Servo")
+    lBaseServo.set(x)
     time.sleep(1)
     #
     # # Preparation of Right leg up
