@@ -4,14 +4,14 @@ from servo import servo
 
 eyepin = 25
 # Left leg
-lHipRot = 4
+lHipRot = 22
 lHip = 27
 lKnee = 17
-lBase = 22
+lBase = 4
 
 lHipServo = servo(lHip, "lHip")
 lKneeServo = servo(lKnee, "lKnee")
-lBaseServo = servo(lBase, "lHipRot")
+lBaseServo = servo(lBase, "lBase")
 
 lHipServo.set(90)
 lKneeServo.set(90)
