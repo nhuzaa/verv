@@ -42,6 +42,11 @@ class servo:
     #         time.sleep(0.02)
     #     else:
     #         self.limit()
+    def slowset(self, angle):
+        for x in range(self.angle, angle):
+            self.s.ChangeDutyCycle(map(x))
+            print("Angle" + str(x))
+            time.sleep(0.022)
 
     def set(self, angle):
 
