@@ -31,9 +31,9 @@ rHipRotServo.set(150)
 while True:
 
     # center
-    x = input("Right Base Servo")
+    x = input("lBaseServo Base Servo")
     print(int(x))
-    rBaseServo.set(int(x))
+    lBaseServo.set(int(x))
     time.sleep(1)
     # x = input("left Base Servo")
     # print(int(x))
