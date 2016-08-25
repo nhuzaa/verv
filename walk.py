@@ -12,7 +12,7 @@ lBase = 22
 lHipServo = servo(lHip)
 
 while True:
-    lHipServo(0)
+    lHipServo.set(0)
     time.sleep(1)
     lHipServo(180)
-    time.sleep(1)
+    time.sleep.set(1)
