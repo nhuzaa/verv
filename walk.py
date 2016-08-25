@@ -9,8 +9,8 @@ lHip = 27
 lKnee = 17
 lBase = 22
 
-lHipServo = servo(lHip)
-lKneeServo = servo(lKnee)
+lHipServo = servo(lHip, "lHip")
+lKneeServo = servo(lKnee, "lKnee")
 while True:
     lHipServo.slowset(0)
     lKneeServo.slowset(180)

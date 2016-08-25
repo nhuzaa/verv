@@ -19,9 +19,11 @@ class servo:
     pulse = 7.5
     s = None
     pin = None
+    name = "none"
 
-    def __init__(self, pin):
+    def __init__(self, pin, name):
         self.pin = pin
+        self.name = name
         GPIO.setup(pin, GPIO.OUT)
         self.s = GPIO.PWM(pin, 50)
         self.s.start(map(self.angle))
@@ -47,19 +49,19 @@ class servo:
         if(self.angle < angle):
             for x in range(self.angle, angle + 1):
                 self.s.ChangeDutyCycle(map(x))
-                print("Angle" + str(x))
+                print("Angle " + self.name + str(x))
                 time.sleep(0.022)
             self.angle = angle
         else:
             for x in range(self.angle, angle + 1, -1):
                 self.s.ChangeDutyCycle(map(x))
-                print("Angle" + str(x))
+                print("Angle" + self.name + str(x))
                 time.sleep(0.022)
             self.angle = angle
 
     def set(self, angle):
         self.s.ChangeDutyCycle(map(angle))
-        print("Angle" + str(angle))
+        print("Angle" + self.name + str(angle))
         self.angle = angle
 
     def limit(self):
