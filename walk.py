@@ -34,7 +34,7 @@ while True:
     # lean left
     rBaseServo.set(160)
     time.sleep(1)
-    lBaseServo.set(160)
+    lBaseServo.set(130)
     time.sleep(1)
 
     # Right UP
@@ -46,7 +46,7 @@ while True:
     # center
     rBaseServo.set(90)
     time.sleep(1)
-    lBaseServo.set(90)
+    lBaseServo.set(60)
     time.sleep(1)
 
     # Right Down
@@ -59,7 +59,7 @@ while True:
     # Lean Right
     rBaseServo.set(20)
     time.sleep(1)
-    lBaseServo.set(20)
+    lBaseServo.set(0)
     time.sleep(1)
 
     # left UP
@@ -71,7 +71,7 @@ while True:
     # center
     rBaseServo.set(90)
     time.sleep(1)
-    lBaseServo.set(90)
+    lBaseServo.set(60)
     time.sleep(1)
 
     # Left Down
