@@ -26,66 +26,66 @@ rHipServo = servo(rHip, "rHip")
 rKneeServo = servo(rKnee, "rKnee")
 rBaseServo = servo(rBase, "rBase")
 
-lHipRotServo.set(70)
-rHipRotServo.set(70)
+lHipRotServo.set(90)
+rHipRotServo.set(90)
 while True:
 
+    # # center
+    # x = input("Right Base Servo")
+    # print(int(x))
+    # rBaseServo.set(int(x))
+    # time.sleep(1)
+    # x = input("left Base Servo")
+    # print(int(x))
+    # lBaseServo.set(int(x))
+    # time.sleep(1)
+
+    # Preparation of Right leg up
+    # lean left
+    rBaseServo.slowset(180)
+    time.sleep(1)
+    lBaseServo.slowset(180)
+    time.sleep(1)
+
+    # Right UP
+    rKneeServo.slowset(180)
+    time.sleep(1)
+    rHipServo.slowset(0)
+    time.sleep(1)
+
     # center
-    x = input("Right Base Servo")
-    print(int(x))
-    rBaseServo.set(int(x))
+    rBaseServo.slowset(120)
     time.sleep(1)
-    x = input("left Base Servo")
-    print(int(x))
-    lBaseServo.set(int(x))
+    lBaseServo.slowset(160)
     time.sleep(1)
-    #
-    # # Preparation of Right leg up
-    # # lean left
-    # rBaseServo.set(160)
-    # time.sleep(1)
-    # lBaseServo.set(130)
-    # time.sleep(1)
-    #
-    # # Right UP
-    # rKneeServo.set(180)
-    # time.sleep(1)
-    # rHipServo.set(0)
-    # time.sleep(1)
-    #
-    # # center
-    # rBaseServo.set(90)
-    # time.sleep(1)
-    # lBaseServo.set(60)
-    # time.sleep(1)
-    #
-    # # Right Down
-    # rKneeServo.set(90)
-    # time.sleep(1)
-    # rHipServo.set(90)
-    # time.sleep(1)
-    #
-    # # Prepartion for Left Leg up
-    # # Lean Right
-    # rBaseServo.set(20)
-    # time.sleep(1)
-    # lBaseServo.set(0)
-    # time.sleep(1)
-    #
-    # # left UP
-    # lKneeServo.set(0)
-    # time.sleep(1)
-    # lHipServo.set(180)
-    # time.sleep(1)
-    #
-    # # center
-    # rBaseServo.set(90)
-    # time.sleep(1)
-    # lBaseServo.set(60)
-    # time.sleep(1)
-    #
-    # # Left Down
-    # lKneeServo.set(90)
-    # time.sleep(1)
-    # lHipServo.set(90)
-    # time.sleep(1)
+
+    # Right Down
+    rKneeServo.slowset(90)
+    time.sleep(1)
+    rHipServo.slowset(90)
+    time.sleep(1)
+
+    # Prepartion for Left Leg up
+    # Lean Right
+    rBaseServo.slowset(40)
+    time.sleep(1)
+    lBaseServo.slowset(30)
+    time.sleep(1)
+
+    # left UP
+    lKneeServo.slowset(0)
+    time.sleep(1)
+    lHipServo.slowset(180)
+    time.sleep(1)
+
+    # center
+    rBaseServo.slowset(120)
+    time.sleep(1)
+    lBaseServo.slowset(160)
+    time.sleep(1)
+
+    # Left Down
+    lKneeServo.slowset(90)
+    time.sleep(1)
+    lHipServo.set(90)
+    time.sleep(1)
