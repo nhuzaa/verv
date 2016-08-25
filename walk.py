@@ -26,8 +26,8 @@ rHipServo = servo(rHip, "rHip")
 rKneeServo = servo(rKnee, "rKnee")
 rBaseServo = servo(rBase, "rBase")
 
-lHipRotServo.set(10)
-rHipRotServo.set(160)
+lHipRotServo.set(30)
+rHipRotServo.set(140)
 while True:
 
     # # center
