@@ -16,12 +16,12 @@ rHip = 27
 rKnee = 17
 rBase = 4
 
-#lHipRotServo = servo(lHipRot, "lHipRot")
+lHipRotServo = servo(lHipRot, "lHipRot")
 lHipServo = servo(lHip, "lHip")
 lKneeServo = servo(lKnee, "lKnee")
 lBaseServo = servo(lBase, "lBase")
 
-#rHipRotServo = servo(rHipRot, "rHipRot")
+rHipRotServo = servo(rHipRot, "rHipRot")
 rHipServo = servo(rHip, "rHip")
 rKneeServo = servo(rKnee, "rKnee")
 rBaseServo = servo(rBase, "rBase")
