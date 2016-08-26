@@ -45,18 +45,20 @@ rBaseServo = servo(rBase, "rBase")
 
 def righthandMotion():
 
-    rshldServo.slowset(20)
-    relbServo.slowset(20)
-    rshldServo.slowset(170)
-    relbServo.slowset(170)
+    rshldServo.set(20)
+    relbServo.set(20)
+    time.sleep(0.2)
+    rshldServo.set(170)
+    relbServo.set(170)
 
 
 def lefthandMotion():
 
-    lshldServo.slowset(170)
-    lelbServo.slowset(170)
-    lshldServo.slowset(20)
-    lelbServo.slowset(20)
+    lshldServo.set(170)
+    lelbServo.set(170)
+    time.sleep(0.2)
+    lshldServo.set(20)
+    lelbServo.set(20)
 
 
 def legMotion():
