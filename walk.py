@@ -32,6 +32,16 @@ relbServo = servo(relb, "relb")
 lshldServo = servo(lshld, "lshld")
 lelbServo = servo(lelb, "lelb")
 
+lHipRotServo = servo(lHipRot, "lHipRot")
+lHipServo = servo(lHip, "lHip")
+lKneeServo = servo(lKnee, "lKnee")
+lBaseServo = servo(lBase, "lBase")
+
+rHipRotServo = servo(rHipRot, "rHipRot")
+rHipServo = servo(rHip, "rHip")
+rKneeServo = servo(rKnee, "rKnee")
+rBaseServo = servo(rBase, "rBase")
+
 
 def righthandMotion():
 
@@ -50,33 +60,23 @@ def lefthandMotion():
 
 
 def legMotion():
-    lHipRotServo = servo(lHipRot, "lHipRot")
-    lHipServo = servo(lHip, "lHip")
-    lKneeServo = servo(lKnee, "lKnee")
-    lBaseServo = servo(lBase, "lBase")
-
-    rHipRotServo = servo(rHipRot, "rHipRot")
-    rHipServo = servo(rHip, "rHip")
-    rKneeServo = servo(rKnee, "rKnee")
-    rBaseServo = servo(rBase, "rBase")
 
     lHipRotServo.set(90)
     rHipRotServo.set(100)
-    while True:
 
-        # # center
-        # x = input("rBaseServo Base Servo")
-        # print(int(x))
-        # rBaseServo.set(int(x))
-        # time.sleep(1)
-        # x = input("left Base Servo")
-        # print(int(x))
-        # lBaseServo.set(int(x))
-        # time.sleep(1)
+    # # center
+    # x = input("rBaseServo Base Servo")
+    # print(int(x))
+    # rBaseServo.set(int(x))
+    # time.sleep(1)
+    # x = input("left Base Servo")
+    # print(int(x))
+    # lBaseServo.set(int(x))
+    # time.sleep(1)
 
-        #
-        # Preparation of Right leg up
-        # lean left
+    #
+    # Preparation of Right leg up
+    # lean left
         rBaseServo.slowset(170)
         lBaseServo.slowset(170)
 
@@ -125,3 +125,4 @@ if __name__ == '__main__':
     while True:
         lefthandMotion()
         righthandMotion()
+        legMotion()
