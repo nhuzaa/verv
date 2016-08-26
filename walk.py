@@ -25,15 +25,6 @@ relb = 12
 lshld = 21
 lelb = 20
 
-lHipRotServo = servo(lHipRot, "lHipRot")
-lHipServo = servo(lHip, "lHip")
-lKneeServo = servo(lKnee, "lKnee")
-lBaseServo = servo(lBase, "lBase")
-
-rHipRotServo = servo(rHipRot, "rHipRot")
-rHipServo = servo(rHip, "rHip")
-rKneeServo = servo(rKnee, "rKnee")
-rBaseServo = servo(rBase, "rBase")
 
 rshldServo = servo(rshld, "rshld")
 relbServo = servo(relb, "relb")
@@ -67,6 +58,15 @@ def lefthandMotion():
 
 
 def legMotion():
+    lHipRotServo = servo(lHipRot, "lHipRot")
+    lHipServo = servo(lHip, "lHip")
+    lKneeServo = servo(lKnee, "lKnee")
+    lBaseServo = servo(lBase, "lBase")
+
+    rHipRotServo = servo(rHipRot, "rHipRot")
+    rHipServo = servo(rHip, "rHip")
+    rKneeServo = servo(rKnee, "rKnee")
+    rBaseServo = servo(rBase, "rBase")
     while True:
 
         # # center
