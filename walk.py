@@ -37,20 +37,16 @@ def righthandMotion():
 
     rshldServo.slowset(20)
     relbServo.slowset(20)
-    time.sleep(0.5)
     rshldServo.slowset(170)
     relbServo.slowset(170)
-    time.sleep(0.5)
 
 
 def lefthandMotion():
 
     lshldServo.slowset(170)
     lelbServo.slowset(170)
-    time.sleep(0.5)
     lshldServo.slowset(20)
     lelbServo.slowset(20)
-    time.sleep(0.5)
 
 
 def legMotion():
