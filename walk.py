@@ -126,4 +126,4 @@ if __name__ == '__main__':
     p2 = Process(target=lefthandMotion)
     p2.start()
     p3 = Process(target=legMotion)
-    p3.start()
+    # p3.start()
