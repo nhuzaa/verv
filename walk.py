@@ -77,43 +77,43 @@ def legMotion():
     #
     # Preparation of Right leg up
     # lean left
-        rBaseServo.slowset(170)
-        lBaseServo.slowset(170)
+    rBaseServo.slowset(170)
+    lBaseServo.slowset(170)
 
-        # Right UP
-        rKneeServo.slowset(180)
-        rHipServo.slowset(0)
+    # Right UP
+    rKneeServo.slowset(180)
+    rHipServo.slowset(0)
 
-        # center
-        rBaseServo.slowset(150)
+    # center
+    rBaseServo.slowset(150)
 
-        lBaseServo.slowset(130)
+    lBaseServo.slowset(130)
 
-        # Right Down
-        rKneeServo.slowset(90)
+    # Right Down
+    rKneeServo.slowset(90)
 
-        rHipServo.slowset(90)
+    rHipServo.slowset(90)
 
-        # Prepartion for Left Leg up
-        # Lean Right
-        rBaseServo.slowset(0)
+    # Prepartion for Left Leg up
+    # Lean Right
+    rBaseServo.slowset(0)
 
-        lBaseServo.slowset(0)
+    lBaseServo.slowset(0)
 
-        # left UP
-        lKneeServo.slowset(0)
+    # left UP
+    lKneeServo.slowset(0)
 
-        lHipServo.slowset(180)
+    lHipServo.slowset(180)
 
-        # center
-        rBaseServo.slowset(150)
+    # center
+    rBaseServo.slowset(150)
 
-        lBaseServo.slowset(130)
+    lBaseServo.slowset(130)
 
-        # Left Down
-        lKneeServo.slowset(90)
+    # Left Down
+    lKneeServo.slowset(90)
 
-        lHipServo.set(90)
+    lHipServo.set(90)
 
 if __name__ == '__main__':
     # p1 = Process(target=righthandMotion)
