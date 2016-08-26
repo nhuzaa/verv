@@ -33,10 +33,6 @@ lshldServo = servo(lshld, "lshld")
 lelbServo = servo(lelb, "lelb")
 
 
-lHipRotServo.set(90)
-rHipRotServo.set(100)
-
-
 def righthandMotion():
     while True:
         rshldServo.slowset(20)
@@ -67,6 +63,9 @@ def legMotion():
     rHipServo = servo(rHip, "rHip")
     rKneeServo = servo(rKnee, "rKnee")
     rBaseServo = servo(rBase, "rBase")
+
+    lHipRotServo.set(90)
+    rHipRotServo.set(100)
     while True:
 
         # # center
