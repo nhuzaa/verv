@@ -47,7 +47,7 @@ def righthandMotion():
 
     rshldServo.set(20)
     relbServo.set(20)
-    time.sleep(0.2)
+    time.sleep(1)
     rshldServo.set(170)
     relbServo.set(170)
 
@@ -56,7 +56,7 @@ def lefthandMotion():
 
     lshldServo.set(170)
     lelbServo.set(170)
-    time.sleep(0.2)
+    time.sleep(1)
     lshldServo.set(20)
     lelbServo.set(20)
 
