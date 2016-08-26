@@ -34,23 +34,23 @@ lelbServo = servo(lelb, "lelb")
 
 
 def righthandMotion():
-    while True:
-        rshldServo.slowset(20)
-        relbServo.slowset(20)
-        time.sleep(0.5)
-        rshldServo.slowset(170)
-        relbServo.slowset(170)
-        time.sleep(0.5)
+
+    rshldServo.slowset(20)
+    relbServo.slowset(20)
+    time.sleep(0.5)
+    rshldServo.slowset(170)
+    relbServo.slowset(170)
+    time.sleep(0.5)
 
 
 def lefthandMotion():
-    while True:
-        lshldServo.slowset(170)
-        lelbServo.slowset(170)
-        time.sleep(0.5)
-        lshldServo.slowset(20)
-        lelbServo.slowset(20)
-        time.sleep(0.5)
+
+    lshldServo.slowset(170)
+    lelbServo.slowset(170)
+    time.sleep(0.5)
+    lshldServo.slowset(20)
+    lelbServo.slowset(20)
+    time.sleep(0.5)
 
 
 def legMotion():
@@ -120,9 +120,12 @@ def legMotion():
         lHipServo.set(90)
 
 if __name__ == '__main__':
-    p1 = Process(target=righthandMotion)
-    p1.start()
-    p2 = Process(target=lefthandMotion)
-    p2.start()
-    p3 = Process(target=legMotion)
+    # p1 = Process(target=righthandMotion)
+    # p1.start()
+    # p2 = Process(target=lefthandMotion)
+    # p2.start()
+    # p3 = Process(target=legMotion)
     # p3.start()
+    while True:
+        lefthandMotion()
+        righthandMotion()
